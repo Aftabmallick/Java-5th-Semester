@@ -1,4 +1,26 @@
 public class Student {
-    private string S_Name,  Batch,  Stream;
+    private String S_Name,  Batch,  Stream;
     private int Roll_No,Year_of_Adm;
+    Student(String sn, int rn){
+        S_Name=sn;
+        Roll_No=rn;
+    }
+    Student(String sn, int rn, String b){
+
+    }
+    Student(String sn, int rn, String b, int yr){
+
+    }
+    Student(String sn, int rn, String b, int yr, String s){
+
+    }
+    void showdata( ){
+        System.out.println("Name : "+S_Name+"\nRoll no : "+Roll_No+"\nBatch : "+Batch+"\nYear of admission : "+Year_of_Adm+"\nStream : "+Stream+"\n\n");
+    }
+    public static void main(String[] args) {
+        Student s1 =new Student("Aftab", 60);
+        s1.showdata();
+        Student s2 =new Student("Aftab", 60,"Data Science");
+        s1.showdata();
+    }
 }
