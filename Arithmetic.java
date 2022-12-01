@@ -11,9 +11,16 @@ public class Arithmetic {
     }
 
     void add(int a, double d) {
-        a = this.a;
-        d = this.d;
+        //a = this.a;
+        //d = this.d;
         this.sum = a + d;
+    }
+    void add(int a, float b, double d){
+      /*  a = this.a;
+        b = this.b;
+        d = this.d;*/
+        this.sum = a + b + d;
+
     }
 
     void display() {
@@ -23,6 +30,8 @@ public class Arithmetic {
     public static void main(String[] args) {
         Arithmetic a1 = new Arithmetic(10, 10.5f, 'a', 500);
         a1.add(10, 10);
+        a1.display();
+        a1.add(10, 10.5f, 20);
         a1.display();
 
     }
