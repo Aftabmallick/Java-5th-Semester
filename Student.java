@@ -6,7 +6,9 @@ public class Student {
         Roll_No=rn;
     }
     Student(String sn, int rn, String b){
-
+        S_Name=sn;
+        Roll_No=rn;
+        Batch=b;
     }
     Student(String sn, int rn, String b, int yr){
 
