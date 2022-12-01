@@ -11,7 +11,10 @@ public class Student {
         Batch=b;
     }
     Student(String sn, int rn, String b, int yr){
-
+        S_Name=sn;
+        Roll_No=rn;
+        Batch=b;
+        Year_of_Adm=yr;
     }
     Student(String sn, int rn, String b, int yr, String s){
 
