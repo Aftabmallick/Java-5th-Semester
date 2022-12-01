@@ -29,7 +29,11 @@ public class Student {
     public static void main(String[] args) {
         Student s1 =new Student("Aftab", 60);
         s1.showdata();
-        Student s2 =new Student("Aftab", 60,"Data Science");
-        s1.showdata();
+        Student s2 =new Student("Aftab", 60,"5th");
+        s2.showdata();
+        Student s3 =new Student("Aftab", 60,"5th",2020);
+        s3.showdata();
+        Student s4 =new Student("Aftab", 60,"5th",2020,"DS");
+        s4.showdata();
     }
 }
