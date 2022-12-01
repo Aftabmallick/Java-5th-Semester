@@ -22,6 +22,20 @@ public class Arithmetic {
         this.sum = a + b + d;
 
     }
+    void add(float b, int a, double d){
+        /*  a = this.a;
+        b = this.b;
+        d = this.d;*/
+        this.sum = a + b + d;
+    }
+    Arithmetic add(Arithmetic A2){
+        /*this.a=A2.a;
+        this.b=A2.b;
+        this.c=A2.c;
+        this.d=A2.d;*/
+        this.sum=A2.a+A2.b+A2.c+A2.d;
+        return this;
+    }
 
     void display() {
         System.out.println("Sum = " + this.sum);
@@ -32,6 +46,12 @@ public class Arithmetic {
         a1.add(10, 10);
         a1.display();
         a1.add(10, 10.5f, 20);
+        a1.display();
+        a1.add(10.5f, 10, 20);
+        a1.display();
+        Arithmetic a2 = new Arithmetic(50, 50.5f, 'd', 100);
+        System.out.println("Addition of Two Objects ");
+        a1.add(a2);
         a1.display();
 
     }
