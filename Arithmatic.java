@@ -1,9 +1,9 @@
-public class Arithmetic {
+public class Arithmatic {
     private int a;
     private float b;
     private char c;
     private double d, sum;
-    Arithmetic(int a, float b, char c, double d) {
+    Arithmatic(int a, float b, char c, double d) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -28,7 +28,7 @@ public class Arithmetic {
         d = this.d;*/
         this.sum = a + b + d;
     }
-    Arithmetic add(Arithmetic A2){
+    Arithmatic add(Arithmatic A2){
         /*this.a=A2.a;
         this.b=A2.b;
         this.c=A2.c;
@@ -42,14 +42,14 @@ public class Arithmetic {
     }
 
     public static void main(String[] args) {
-        Arithmetic a1 = new Arithmetic(10, 10.5f, 'a', 500);
+        Arithmatic a1 = new Arithmatic(10, 10.5f, 'a', 500);
         a1.add(10, 10);
         a1.display();
         a1.add(10, 10.5f, 20);
         a1.display();
         a1.add(10.5f, 10, 20);
         a1.display();
-        Arithmetic a2 = new Arithmetic(50, 50.5f, 'd', 100);
+        Arithmatic a2 = new Arithmatic(50, 50.5f, 'd', 100);
         System.out.println("Addition of Two Objects ");
         a1.add(a2);
         a1.display();
