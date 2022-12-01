@@ -17,7 +17,11 @@ public class Student {
         Year_of_Adm=yr;
     }
     Student(String sn, int rn, String b, int yr, String s){
-
+        S_Name=sn;
+        Roll_No=rn;
+        Batch=b;
+        Year_of_Adm=yr;
+        Stream=s;
     }
     void showdata( ){
         System.out.println("Name : "+S_Name+"\nRoll no : "+Roll_No+"\nBatch : "+Batch+"\nYear of admission : "+Year_of_Adm+"\nStream : "+Stream+"\n\n");
