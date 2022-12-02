@@ -57,8 +57,12 @@ class JavaProfessional extends Developer{
         this.ProficiencyLevel=ProficiencyLevel;
     }
 
+
 }
 class PythonProfessional extends Developer{
     private String ProficiencyLevel;
-
+    void display(){
+        super.show();
+        System.out.println("Typing Speed: "+TypingSpeed);
+    }
 }
