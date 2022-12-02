@@ -52,6 +52,7 @@ class DataOperator extends ComputerProfessional{
 }
 class JavaProfessional extends Developer{
     private int ProficiencyLevel;
+    
 }
 class PythonProfessional extends Developer{
     private int ProficiencyLevel;
