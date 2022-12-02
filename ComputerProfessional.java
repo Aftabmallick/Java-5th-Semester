@@ -29,7 +29,7 @@ public class ComputerProfessional {
         j1.display();
         System.out.println("\tPython Professional");
         PythonProfessional p1 = new PythonProfessional("AftabPy", "WTF4", 8, 4, "Pro");
-        
+        p1.display();
 
 
 
