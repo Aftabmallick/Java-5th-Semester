@@ -51,9 +51,14 @@ class DataOperator extends ComputerProfessional{
     }
 }
 class JavaProfessional extends Developer{
-    private int ProficiencyLevel;
-    
+    private String ProficiencyLevel;
+    JavaProfessional(String EName,String Prospect,int DutyHour,int StudyHour,String ProficiencyLevel){
+        super(EName, Prospect, DutyHour, StudyHour);
+        this.ProficiencyLevel=ProficiencyLevel;
+    }
+
 }
 class PythonProfessional extends Developer{
-    private int ProficiencyLevel;
+    private String ProficiencyLevel;
+
 }
