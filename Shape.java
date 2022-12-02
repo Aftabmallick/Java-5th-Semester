@@ -65,7 +65,7 @@ class triangle extends Shape{
         System.out.println("Area = "+a);
     }
     void cal_area(){
-        a=length*height;
+        a=length*height/2;
     }
 
 }
