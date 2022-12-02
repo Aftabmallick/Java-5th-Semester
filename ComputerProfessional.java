@@ -13,18 +13,25 @@ public class ComputerProfessional {
     }
     public static void main(String[] args) {
         System.out.println("\tComputer Professional");
-        ComputerProfessional cp1 =new ComputerProfessional('Aftab', 'What??', 8);
+        ComputerProfessional cp1 =new ComputerProfessional("Aftab", "What??", 8);
         cp1.show();
         System.out.println("\tDeveloper");
-        Developer d1 = new Developer('AftabDev', 'WTF', 12, 6);
+        Developer d1 = new Developer("AftabDev", "WTF", 12, 6);
         d1.display();
-        System.out.println("Network Admin");
-        NetworkAdmin n1 = new NetworkAdmin('AftabNA', 'WTF1', 10, 5);
+        System.out.println("\tNetwork Admin");
+        NetworkAdmin n1 = new NetworkAdmin("AftabNA", "WTF1", 10, 5);
         n1.display();
-        System.out.println("Dta Operator");
-        DataOperator da1 = new DataOperator('AftabDA', "WTF2", 9, 4);
+        System.out.println("\tData Operator");
+        DataOperator da1 = new DataOperator("AftabDA", "WTF2", 9, 4);
         da1.display();
-        System.out.println("Java Professional");
+        System.out.println("\tJava Professional");
+        JavaProfessional j1 = new JavaProfessional("AFtabJava", "WTF3", 8, 5, "Beginner");
+        j1.display();
+        System.out.println("\tPython Professional");
+        PythonProfessional p1 = new PythonProfessional("AftabPy", "WTF4", 8, 4, "Pro");
+        
+
+
 
         
     }
