@@ -12,5 +12,11 @@ class Developer extends NetworkAdmin{
 
 }
 class Developer extends DataOperator{
+
+}
+class Developer extends JavaProfessional{
+
+}
+class Developer extends PythonProfessional{
     
 }
