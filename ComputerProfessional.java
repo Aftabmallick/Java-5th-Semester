@@ -56,13 +56,21 @@ class JavaProfessional extends Developer{
         super(EName, Prospect, DutyHour, StudyHour);
         this.ProficiencyLevel=ProficiencyLevel;
     }
+    void display(){
+        super.display();
+        System.out.println("Proficiency Level : "+ProficiencyLevel);
+    }
 
 
 }
 class PythonProfessional extends Developer{
     private String ProficiencyLevel;
+    PythonProfessional(String EName,String Prospect,int DutyHour,int StudyHour,String ProficiencyLevel){
+        super(EName, Prospect, DutyHour, StudyHour);
+        this.ProficiencyLevel=ProficiencyLevel;
+    }
     void display(){
         super.display();
-        System.out.println("Proficiency Level: "+TypingSpeed);
+        System.out.println("Proficiency Level : "+ProficiencyLevel);
     }
 }
