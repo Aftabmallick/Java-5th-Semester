@@ -12,14 +12,21 @@ public class Shape {
 
     }
    public static void main(String[] args) {
+        System.out.println("\tSquare");
         Shape sq=new Square();
         sq.get();
         sq.cal_area();
         sq.put();
+        System.out.println("\tRectangle");
         Shape r=new Rectangle();
         r.get();
         r.cal_area();
         r.put();
+        System.out.println("\tTraingle");
+        Shape t=new triangle();
+        t.get();
+        t.cal_area();
+        t.put();
    } 
 }
 class Square extends Shape{
