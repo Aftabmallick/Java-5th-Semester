@@ -12,6 +12,7 @@ public class ComputerProfessional {
         System.out.println("Hours of Duty: "+DutyHour);
     }
     public static void main(String[] args) {
+        
         System.out.println("\tComputer Professional");
         ComputerProfessional cp1 =new ComputerProfessional("Aftab", "What??", 8);
         cp1.show();
@@ -30,9 +31,6 @@ public class ComputerProfessional {
         System.out.println("\tPython Professional");
         PythonProfessional p1 = new PythonProfessional("AftabPy", "WTF4", 8, 4, "Pro");
         p1.display();
-
-
-
         
     }
 }
