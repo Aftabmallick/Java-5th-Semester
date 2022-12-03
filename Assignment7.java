@@ -64,6 +64,9 @@ public class Assignment7 {
 		System.out.println("The no of Lowercase : "+lw);
 		System.out.println("The no of Whitespace : "+sp);
         System.out.println("The no of Digits : "+dg);
+        Integer af = null;
+        int af1= af;
+        System.out.println(af1);
 
     }
 }
