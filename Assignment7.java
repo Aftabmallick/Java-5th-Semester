@@ -41,9 +41,9 @@ public class Assignment7 {
 		System.out.println(dd);
 
 
-        String str="Aftab007";
+        String str="Aftab 007";
         int l= str.length(); 
-        int up=0,lw=0,sp=0;
+        int up=0,lw=0,sp=0,dg=0;
         for(int i=0;i<l;i++){
             Character n = str.charAt(i);
             if(Character.isUpperCase(n)){
@@ -53,10 +53,17 @@ public class Assignment7 {
             else if (Character.isLowerCase(n)){
                 lw++;
             }
+            else if(Character.isDigit(n)){
+                dg++;
+            }
             else{
                 sp++;
             }
         }
+        System.out.println("The no of Uppercase : "+up);
+		System.out.println("The no of Lowercase : "+lw);
+		System.out.println("The no of Whitespace : "+sp);
+        System.out.println("The no of Digits : "+dg);
 
     }
 }
