@@ -12,7 +12,8 @@ public class Assignment7 {
         a =sc.nextInt();
         System.out.println(" Enter Character value");
         c=sc.next().charAt(0);
-        
+        System.out.println("Enter floating value : ");
+
 
     }
 }
