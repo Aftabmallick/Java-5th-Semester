@@ -17,14 +17,14 @@ public class Assignment7 {
         c=sc.next().charAt(0);
         System.out.println("Enter floating value : ");
         f=sc.nextFloat();
-        System.out.println("nter any double value : ");
+        System.out.println("Enter any double value : ");
         d=sc.nextDouble();
 
         System.out.println("\n Wrapping : ");
-		int A= Integer.valueOf(a);
-		char C= Character.valueOf(c);
-		float F= Float.valueOf(f);
-		double D= Double.valueOf(d);
+		Integer A= Integer.valueOf(a);
+		Character C= Character.valueOf(c);
+		Float F= Float.valueOf(f);
+		Double D= Double.valueOf(d);
         System.out.println(a);
 		System.out.println(c);
 		System.out.println(f);
@@ -35,10 +35,10 @@ public class Assignment7 {
 		cc=C.charValue();
 		ff=F.floatValue();
 		dd=D.doubleValue();
-        System.out.println(a);
-		System.out.println(c);
-		System.out.println(f);
-		System.out.println(d);
+        System.out.println(aa);
+		System.out.println(cc);
+		System.out.println(ff);
+		System.out.println(dd);
 
     }
 }
