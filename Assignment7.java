@@ -40,5 +40,13 @@ public class Assignment7 {
 		System.out.println(ff);
 		System.out.println(dd);
 
+
+        String str="Aftab007";
+        int l= str.length(); 
+        int up=0,lw=0,sp=0;
+        for(int i=0;i<l;i++){
+            
+        }
+
     }
 }
