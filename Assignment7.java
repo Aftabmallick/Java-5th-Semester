@@ -13,7 +13,9 @@ public class Assignment7 {
         System.out.println(" Enter Character value");
         c=sc.next().charAt(0);
         System.out.println("Enter floating value : ");
-
+        f=sc.nextFloat();
+        System.out.println("nter any double value : ");
+        d=sc.nextDouble();
 
     }
 }
