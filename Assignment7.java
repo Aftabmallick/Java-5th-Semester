@@ -8,9 +8,9 @@ public class Assignment7 {
         float f;
         double d;
         Scanner sc = new Scanner(System.in);
-        System.out.println(" Enter integer value : ");
+        System.out.println("Enter integer value : ");
         a =sc.nextInt();
-        System.out.println(" Enter Character value");
+        System.out.println("Enter Character value : ");
         c=sc.next().charAt(0);
         System.out.println("Enter floating value : ");
         f=sc.nextFloat();
