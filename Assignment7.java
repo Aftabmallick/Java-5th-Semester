@@ -45,7 +45,17 @@ public class Assignment7 {
         int l= str.length(); 
         int up=0,lw=0,sp=0;
         for(int i=0;i<l;i++){
-            
+            Character n = str.charAt(i);
+            if(Character.isUpperCase(n)){
+                up++;
+
+            }
+            else if (Character.isLowerCase(n)){
+                lw++;
+            }
+            else{
+                sp++;
+            }
         }
 
     }
