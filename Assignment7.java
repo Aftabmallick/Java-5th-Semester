@@ -5,7 +5,7 @@ public class Assignment7 {
     float f;
     double d;
     public static void main(String[] args) {
-        
+        Scanner sc =new Scanner(System.in);
         
     }
 }
