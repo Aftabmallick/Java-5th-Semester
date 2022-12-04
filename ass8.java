@@ -1,77 +1,80 @@
-import java.util.Scanner;
-class Sorting {
-    protected int a[], n;
-
-    void get() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print(" Enter the size of Array : ");
-        n = sc.nextInt();
-        a = new int[n];
-        System.out.println(" Enter the element's of Array : ");
-        for (int i = 0; i < n; i++)
-            a[i] = sc.nextInt();
-
+import java.util.*;
+class bubble{
+    Scanner sc =new Scanner(System.in);
+    int n;
+    int[] array;
+    void get(){
+        System.out.println("Enter array size: ");
+        n=sc.nextInt();
+        array=new int[n];
+        System.out.println("\nEnter elements in array : ");
+        for(int i=0;i<n;i++){
+            array[i]=sc.nextInt();
+        }
+        
     }
-
-    void bubble() {
-        int temp;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - 1 - i; j++) {
-                if (a[j] > a[j + 1]) {
-                    temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
+    void sort(){
+        for(int i =0 ;i<n-1;i++){
+            for(int j=0;j<n-i-1;j++){
+                if(array[j]>array[j+1]){
+                    int temp=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=temp;
                 }
             }
         }
     }
-
-    void insertion() {
-        int temp, j;
-        for (int i = 1; i < n; i++) {
-            temp = a[i];
-            j = i - 1;
-            while (j >= 0 && a[j] > temp) {
-                a[j + 1] = a[j];
-                j = j - 1;
-            }
-            a[j + 1] = temp;
+    void print(){
+        System.out.println("Sorted array: ");
+        for(int i=0;i<n;i++){
+            System.out.print(array[i]+"  ");
         }
     }
-
-    void display() {
-        System.out.println(" After sorting the array is : ");
-        for (int i = 0; i < n; i++) {
-            System.out.print(a[i] + " ");
+}
+class insertion{
+    Scanner sc =new Scanner(System.in);
+    int n;
+    int[] array;
+    void get(){
+        System.out.println("\nEnter array size: ");
+        n=sc.nextInt();
+        array=new int[n];
+        System.out.println("Enter elements in array : ");
+        for(int i=0;i<n;i++){
+            array[i]=sc.nextInt();
+        }       
+    }
+    void sort(){
+        for(int i =0 ;i<n-1;i++){
+            int key =array[i];
+            int j=i-1;
+            while (j>=0 && array[j]>key){
+                array[j+1]=array[j];
+                j=j-1;
+            }
+            array[j+1]=key;
+            }
         }
-        System.out.println();
+    
+    void print(){
+        System.out.println("Sorted array: ");
+        for(int i=0;i<n;i++){
+            System.out.print(array[i]+"  ");
+        }
     }
 }
 
 public class ass8 {
-    public static void main(String args[]) {
-        int c;
-        Sorting a1 = new Sorting();
-        System.out.println(" Enter 1 for Bubble sorting \n Enter 2 for Insertion sorting \n Enter 3 for Exit");
-        System.out.print(" Enter your choice : ");
-        Scanner sc = new Scanner(System.in);
-        while (true) {
-            c = sc.nextInt();
-            switch (c) {
-                case 1:
-                    a1.get();
-                    a1.bubble();
-                    a1.display();
-                    break;
-                case 2:
-                    a1.get();
-                    a1.insertion();
-                    a1.display();
-                    break;
-                case 3:
-                    return;
-            }
-        }
-    }
 
+
+    public static void main(String[] args) {
+        bubble b1 = new bubble();
+        b1.get();
+        b1.sort();
+        b1.print();
+        insertion i1=new insertion();
+        i1.get();
+        i1.sort();
+        i1.print();
+    }
 }
